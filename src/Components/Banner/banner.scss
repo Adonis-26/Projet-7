@@ -1,9 +1,12 @@
 .banner { 
    position: relative;
-   max-width: 130vw;
+   max-width: 110vw;
    max-height: 223px;
    margin-top: 30px;
-   background-image: url("/public/img/img_banner.png");
+   background: url("/public/img/img_banner.png");
+   background-position: center;
+   background-repeat:no-repeat;
+   background-size: cover;
    border-radius: 25px;
    display: grid;
    place-items: center;
