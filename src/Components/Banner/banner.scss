@@ -1,0 +1,24 @@
+.banner { 
+   position: relative;
+   max-width: 100vw;
+   max-height: 223px;
+   margin-top: 30px;
+   background-image: url("/public/img/img_banner.png");
+   border-radius: 25px;
+   display: grid;
+   place-items: center;
+   font-weight: 500;
+   font-size: 30px;
+   color: white;
+}
+.banner::before{
+   position: absolute;
+   content: "";
+   inset: 0; /*c'est la même chose que top, left, bottom des position absolu*/
+  background-color: rgba(0,.0,.0, 0.5);
+  border-radius: 25px;
+  opacity: 0.5;
+}
+h1{
+   position: relative;
+}
