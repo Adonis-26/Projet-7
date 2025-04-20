@@ -1,0 +1,10 @@
+.ApartementGray {
+    background: var(--gray);
+    border-radius: 25px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}

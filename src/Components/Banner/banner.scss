@@ -1,28 +1,29 @@
 .banner { 
    position: relative;
    max-width: 110vw;
-   max-height: 223px;
    margin-top: 30px;
    background: url("/public/img/img_banner.png");
    background-position: center;
    background-repeat:no-repeat;
    background-size: cover;
    border-radius: 25px;
-   display: grid;
-   place-items: center;
-   font-weight: 500;
-   font-size: 50px;
-   color: white;
+   display: flex;
+   justify-content: center;
    margin-bottom: 30px;
+   box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 .banner::before{
    position: absolute;
    content: "";
    inset: 0; /*c'est la même chose que top, left, bottom des position absolute*/
-  background-color: rgba(0,.0,.0, 0.5);
+  background-color: rgba(0,.0,.0, 3.5);
   border-radius: 25px;
   opacity: 0.5; 
 }
 h3{
    position: relative;   
+   margin: 65px 0 65px 0;
+   color: white;
+   font-size: 30px;
 }
