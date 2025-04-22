@@ -1,14 +1,10 @@
 :root {
     --red: #ff6060;
     --gray: #F6F6F6;
+    --white: #ffffff;
 }
 body{
-    max-width: 1024px;
-    padding: 30px;
+    padding: 0px;
     margin: 0px;
     font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
 }
