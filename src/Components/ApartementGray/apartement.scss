@@ -3,8 +3,8 @@
     background-color: var(--red);
     display: flex;
     flex-wrap: wrap;
-    width: 435px;
-    height: 375px;
+    width: 907px;
+    height: 417px;
     flex-direction: column;
     justify-content: flex-end;
         h5{
@@ -21,3 +21,14 @@
         }
 }
 
+@media screen and (min-width: 1440px) {
+    .apartement{
+        width: 435px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .appartement{
+        width: 722px;
+    }
+}

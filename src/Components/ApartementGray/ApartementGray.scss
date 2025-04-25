@@ -1,13 +1,32 @@
 .ApartementGray {
+   
     background: var(--gray);
     border-radius: 25px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px;
-    gap: 35px;
     margin-bottom: 30px;
     margin: 30px;
+    gap: 30px;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .ApartementGray{
+        width: 1362px;
+        margin: 20px;
+        padding: 20px;
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ApartementGray{
+        margin:  5px 20px 20px 20px;
+        padding: 0;
+        width: 720px;
+        background-color: var(--whith);
+    }
 }
 

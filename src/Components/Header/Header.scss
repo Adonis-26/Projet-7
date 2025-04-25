@@ -1,29 +1,51 @@
 .header{
-    
     height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-    margin: 30px;
+    margin: 30px 30px 0 30px;
+        
+        .acceuil_and_a_propos{
+            width: 309px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-family:' Montserrat';
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 143%;
+            text-align: right;
+            vertical-align: bottom;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            
+            .accueil, .a_propos{
+                    margin-left: 40px;
+                }
+        }
 }
 
 
-.acceuil_and_a_propos{
-    width: 309px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 143%;
-    letter-spacing: 0%;
-    text-align: right;
-    vertical-align: bottom;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0%;
+@media screen and (min-width: 1440px) {
+    .header{
+        width: 1383px;
+    }
+ }
 
+@media screen and (width <= 768px) {
+    .header{
+        width: 716px;
+        margin: 26px 26px 0 26px;
+            .logo{
+                width: 110px;
+            }
+            .acceuil_and_a_propos{
+              width: 250px;
+              font-size: 15px;
+              .accueil, .a_propos{
+                    margin: 10px;
+                }
+            }
+    }
 }
-
