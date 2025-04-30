@@ -1,8 +1,8 @@
 import React from 'react'
-import './Body.scss';
+import './HomePage.scss';
 
-function Body({children}) {
+function HomePage({children}) {
     return <div className='body'>{children}</div>;
 }
 
-export default Body
+export default HomePage

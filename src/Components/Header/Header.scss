@@ -1,51 +1,51 @@
 .header{
+    width: 92%;
     height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-    margin: 30px 30px 0 30px;
-        
+    margin: 2% 4% 2% 4%;
+    
+
+    .logo{
+        width: 25%;
+    }
         .acceuil_and_a_propos{
-            width: 309px;
+            width: 50%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            font-family:' Montserrat';
             font-weight: 500;
-            font-size: 24px;
-            line-height: 143%;
-            text-align: right;
+            font-size: 74%;
+            text-align: left;
             vertical-align: bottom;
-            text-decoration: underline;
-            text-decoration-style: solid;
-            
             .accueil, .a_propos{
-                    margin-left: 40px;
-                }
+                margin-left: 20px
+            }
         }
 }
 
-
-@media screen and (min-width: 1440px) {
+@media  screen and (min-width: 768px){
     .header{
-        width: 1383px;
-    }
- }
-
-@media screen and (width <= 768px) {
-    .header{
-        width: 716px;
-        margin: 26px 26px 0 26px;
-            .logo{
-                width: 110px;
+        margin: 2% 4% 2% 4%;
+        .logo{
+            width: 15%;
+        }
+        .acceuil_and_a_propos{
+            width: 41%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-weight: 500;
+            font-size: 136%;
+            text-align: left;
+            vertical-align: bottom;
+            .accueil, .a_propos{
+                margin-left: 20px
             }
-            .acceuil_and_a_propos{
-              width: 250px;
-              font-size: 15px;
-              .accueil, .a_propos{
-                    margin: 10px;
-                }
-            }
+        }
     }
+    
 }
+

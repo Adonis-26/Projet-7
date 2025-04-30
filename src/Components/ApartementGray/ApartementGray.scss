@@ -1,32 +1,20 @@
 .ApartementGray {
-   
-    background: var(--gray);
+    width:100%;
+    background: var(--white);
     border-radius: 25px;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
-    margin: 30px;
-    gap: 30px;
+    gap: 4%;
 }
 
 
-@media screen and (min-width: 1440px) {
-    .ApartementGray{
-        width: 1362px;
-        margin: 20px;
-        padding: 20px;
-        gap: 28px;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .ApartementGray{
-        margin:  5px 20px 20px 20px;
-        padding: 0;
-        width: 720px;
-        background-color: var(--whith);
-    }
-}
-
+@media screen and (min-width: 768px){
+   .ApartementGray{
+    width: 92%;
+    background: var(--gray);
+    margin:20px 51px;
+    padding:  20px 0;
+    display: flex;
+    flex-wrap: wrap;;
+   }
+ }
