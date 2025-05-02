@@ -1,6 +1,6 @@
 .apartement{
     border-radius: 10px;
-    background-color: var(--red);
+    background-image:  linear-gradient(to top, #863535, #ff6060);
     display: flex;
     flex-wrap: wrap;
     width: 92%;
@@ -8,7 +8,11 @@
     flex-direction: column;
     justify-content: flex-end;
     margin: 4%;
-    
+
+        a{
+        text-decoration: none;   
+        cursor: pointer;
+        }
         h5{
             display: flex;
             color: white;
@@ -22,6 +26,7 @@
             width: 94px;
         }
 }
+
 
 @media screen and (min-width: 768px){
     .apartement{
