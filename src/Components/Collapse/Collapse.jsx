@@ -11,7 +11,7 @@ function Collapse({ titre, children }) {
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={toggleCollapse}>
-        <p>{titre} </p>
+        <p>{titre} Equipements </p>
         <span className={`arrow ${isOpen ? "open" : ""}`}>
         <i className={"fa-solid fa-chevron-up"}></i> 
         </span>

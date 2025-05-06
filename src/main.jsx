@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import FicheLogement from "./Pages/FicheLogement/FicheLogement";
 import Page404 from "./pages/Page404/Page404";
+import A_Propos from "./pages/A_Propos/A_Propos";
 
 
 const HeaderFooterLayout = () => {
@@ -30,8 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/a_propos",
-        element:
-            <h1>a ropos</h1>
+        element: <A_Propos />
       },
     ],
     errorElement: (

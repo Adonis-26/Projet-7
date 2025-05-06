@@ -2,7 +2,7 @@ import React from 'react'
 import './Ville.scss'
 
 function Ville() {
-  return <div>
+  return <div className='ville_flex'>
         <div className='ville'>
         Paris center, on the romantic <br/> Canal Saint-Martin
             <div className='region'>
