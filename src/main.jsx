@@ -9,7 +9,7 @@ import Page404 from "./pages/Page404/Page404";
 import A_Propos from "./pages/A_Propos/A_Propos";
 
 
-const HeaderFooterLayout = () => {
+const HeaderFooterLayout = ()  => {
   return <>
      <Header />
       <Outlet />

@@ -1,6 +1,18 @@
 .A_Propos{
-    padding: 0px 10px;
+    padding: 0 4%;
     .aproposBanner{
         margin-bottom: 10px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .A_Propos{
+        .aproposBanner{
+            margin-bottom: 10px;
+        }
+        .aproposCollapse{
+            padding: 0 4%;
+        }
+    }
+
 }

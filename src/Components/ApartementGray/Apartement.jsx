@@ -2,10 +2,12 @@ import React from 'react'
 import './Apartement.scss'
 import { NavLink } from "react-router-dom";
 
-function Apartement() {
+function Apartement(props) {
+  console.log("props dans appartement",props)
   return <div className='apartement'>
     <NavLink to= "/apartement">
-      <h5>Titre de la <br/>location</h5>
+      <img src={props.imageApartement} alt="img_apartement" />
+      <h5>{props.title}</h5>
     </NavLink>
     
   </div>
