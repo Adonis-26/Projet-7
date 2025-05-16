@@ -1,13 +1,10 @@
 import React from 'react'
 import './BannerAppartement.scss'
 
-function BannerAppartement() {
+function BannerAppartement(props) {
   return <div className='BannerAppartement'>
     <div className='tel'>
-        <img src="./public/img/tel.png" alt="tel" />
-    </div>
-    <div className='carousel'>
-        <img src="./public/img/carousel.png" alt="carousel" />
+        <img src={ props.imageUrl} alt="tel" />
     </div>
   </div>
   

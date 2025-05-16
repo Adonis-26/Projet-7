@@ -1,10 +1,11 @@
 import React from 'react'
 import './Ville.scss'
 
-function Ville() {
+function Ville(props) {
+  console.log("props ville:", props)
   return <div className='ville_flex'>
         <div className='ville'>
-        Paris center, on the romantic <br/> Canal Saint-Martin
+        {props.title}
             <div className='region'>
                Paris,île-de-France
             </div>
