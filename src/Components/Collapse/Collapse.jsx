@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Collapse.scss";
 
-function Collapse({ titre, children }) {
+function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -11,7 +11,7 @@ function Collapse({ titre, children }) {
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={toggleCollapse}>
-        <p>{titre} Equipements </p>
+        <p>{title} </p>
         <span className={`arrow ${isOpen ? "open" : ""}`}>
         <i className={"fa-solid fa-chevron-up"}></i> 
         </span>

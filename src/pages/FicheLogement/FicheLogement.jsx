@@ -1,62 +1,62 @@
-import React, { useEffect, useState} from 'react'
-import './FicheLogement.scss'
-import Collapse from '../../Components/Collapse/Collapse'
-import Ville from '../../Components/Ville/Ville'
-import AlexAndStars from '../../Components/AlexAndStars/AlexAndStars'
-import BannerAppartement from '../../Components/BannerAppartement/BannerAppartement'
-import { useLocation } from 'react-router-dom';
+
+import './FicheLogement.scss';
+import Collapse from '../../Components/Collapse/Collapse';
+import BannerAppartement from '../../Components/BannerAppartement/BannerAppartement';
+import { useParams } from 'react-router-dom';
+import data from '../../../public/data.json';
 
 function FicheLogement() {
-    const location = useLocation();
-    console.log("location:", location);
-    console.log("our apartement id is: ", location.state.apartementId)
+  const { apartementId } = useParams(); // On récupère l'id de l'appartement depuis l'URL
+  const apartement = data.find((apt) => apt.id === apartementId); // On cherche dans le fichier JSON
+console.log("apartement:", apartement);
 
-    const [selectApartement, setSelectApartment] = useState(null);
+  if (!apartement) {
+    return <p>Appartement non trouvé.</p>; // Affiche un message si l'appartement n'existe pas
+  }
 
-    useEffect(() => {
-        fetchApartementData();
-     }, []);
+  return (
+    <div className='fichelogement'>
+      <BannerAppartement imageUrl={apartementId.cover} />
 
-    function fetchApartementData (){
-      fetch("data.json")
-      .then((response) => response.json())
-      .then((apartements) => {
-        const apartement = apartements.find((apt) => apt.id === location.state.apartementId);
-        setSelectApartment(apartement);
-    })
-      .catch((error) => console.error('Erreur :', error))
-    }
-  return <div className='fichelogement'>
-    select apartement: {JSON.stringify(selectApartement)};
-    {selectApartement && (
-      <BannerAppartement imageUrl={selectApartement.cover} />
-    )}
-  
-  {selectApartement ? ( // le ? est une condition if /esle
-  <div className='responsive'>
-    <Ville apartement={selectApartement} />
-    <AlexAndStars apartement={selectApartement} />
-  </div>
-) : (
-  <p>Chargement des données...</p>
-)}
-   
-    <div className='collapse_flex'>
-        <Collapse title="Description" />
-        
-        <Collapse title="Équipements" >
-            <ul>
-                <li>Climatisation</li>
-                <li>Wi-Fi</li>
-                <li>Cuisine</li>
-                <li>Espace de travail</li>
-                <li>Fer à repasser</li>
-                <li>Sèche-cheveux</li>
-                <li>Cintres</li>
-            </ul>
-        </Collapse>
+      <div className='responsive'>
+      <div className='ville_flex'>
+        <div className='ville'>
+          <p className='classTitle'>{apartement.title}</p>
+          <p className='region'>{apartement.location}</p>
+            <div className='bloc-rectangle' >
+              {apartement.tags.map((item, index) =>(
+                <p className='rectangle' key={index}>{item}</p>
+              ))}
+              
+        </div>
     </div>
-</div>
+  </div>
+        <div className='AlexAndStars'>
+       <div className='stars'>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid gray fa-star"></i>
+            <i className="fa-solid gray fa-star"></i>
+        </div> 
+        <div className='user'>
+           <p>Alexandre <br/>Dumas</p> 
+            <span className='cercle'></span>
+        </div>
+    </div>
+      </div>
+      <div className='collapse_flex'>
+        <Collapse title="Description">{apartement.description}</Collapse>
+        <Collapse title="Équipements">
+          <ul>
+            {apartement.equipments.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </Collapse>
+      </div>
+    </div>
+  );
 }
 
-export default FicheLogement
+export default FicheLogement;

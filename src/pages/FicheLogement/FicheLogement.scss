@@ -4,19 +4,81 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
-   
+}
+
+.stars >*:not(:first-child){
+    margin-left: 3px;
+   }
+
+   .classTitle{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 36px;
+            vertical-align: bottom;
+            color: #FF6060;
+   }
+  
+  .AlexAndStars{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    .stars{
+        padding-top: 5px;
+    width: 98px;
+        i{
+         width: 17px;   
+        color: var(--red);
+    }
+    .gray{
+        color: #E3E3E3;
+    }
+   }
+   .user{
+    display: flex;
+    width: 135.5px;
+    height: 33px;
+    color: var(--red);
+    
+        p{
+            text-align: end;
+            width: 93px;
+            height: 33px;
+            margin: 0;
+            font-weight: 500;
+            font-size: 17px;
+
+        }
+
+        .cercle{
+            width: 32px;
+            height: 32px;
+            border-radius: 25px;
+            background-color: #c4c4c4;
+            margin-left: 8px;
+       }
+   }
 }
 
 
 @media screen and (min-width: 768px){
-    .fichelogement{
     
-       }
        .bloc-rectangle >*:not(:first-child){
         margin-left: 10px;
        }
        
+       .bloc-rectangle{
+        display: flex;
+       }
+
+       .classTitle{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 36px;
+            vertical-align: bottom;
+            color: #FF6060;
+
+
+       }
        .stars >*:not(:first-child){
         margin-left: 3px;
        }
@@ -30,7 +92,6 @@
         }
        }
        
-
     .responsive{
         display: flex;
         justify-content: space-between;
@@ -40,4 +101,22 @@
         gap: 20px;
     }
     
+
+    .AlexAndStars{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 5px;
+        .stars{
+            padding-top: 5px;
+            width: 98px;
+            i{
+            width: 17px;   
+            color: var(--red);
+        }
+        .gray{
+            color: #E3E3E3;
+        }
+       }
+   }
 }

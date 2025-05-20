@@ -7,7 +7,7 @@ function Header() {
     <img className='logo' src="/img/logo.png" alt="logo" />
       <div className='acceuil_and_a_propos'>
         <NavLink to= "/">
-          <div classNames='accueil'>Accueil</div>
+          <div className='accueil'>Accueil</div>
           </NavLink>
           <NavLink to= "/a_propos">
             <div className='a_propos'>A propos</div>
