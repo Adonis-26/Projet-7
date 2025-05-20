@@ -18,7 +18,7 @@
             color: #FF6060;
    }
   
-  .AlexAndStars{
+  .containerUserStars{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
@@ -76,8 +76,6 @@
             font-size: 36px;
             vertical-align: bottom;
             color: #FF6060;
-
-
        }
        .stars >*:not(:first-child){
         margin-left: 3px;
