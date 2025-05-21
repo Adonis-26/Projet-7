@@ -1,7 +1,6 @@
 
 import './FicheLogement.scss';
 import Collapse from '../../Components/Collapse/Collapse';
-import BannerAppartement from '../../Components/BannerAppartement/BannerAppartement';
 import { useParams } from 'react-router-dom';
 import data from '../../../public/data.json';
 

@@ -1,45 +1,63 @@
-.fichelogement{
+.fichelogement {
     width: 92%;
     padding: 0% 4% 0% 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .BannerAppartement {
+        .tel{
+            width: 100%;
+            height: 240px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 110vw;
+            object-fit: cover; 
+            
+        }
+    }
 }
 
-.stars >*:not(:first-child){
+.stars>*:not(:first-child) {
     margin-left: 3px;
-   }
+}
 
-   .classTitle{
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-size: 36px;
-            vertical-align: bottom;
-            color: #FF6060;
-   }
-  
-  .containerUserStars{
+.classTitle {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    vertical-align: bottom;
+    color: #FF6060;
+}
+
+.containerUserStars {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
-    .stars{
+
+    .stars {
         padding-top: 5px;
-    width: 98px;
-        i{
-         width: 17px;   
+        width: 98px;
+
+        i {
+            width: 17px;
+            color: var(--red);
+        }
+
+        .gray {
+            color: #E3E3E3;
+        }
+    }
+
+    .user {
+        display: flex;
+        width: 135.5px;
+        height: 33px;
         color: var(--red);
-    }
-    .gray{
-        color: #E3E3E3;
-    }
-   }
-   .user{
-    display: flex;
-    width: 135.5px;
-    height: 33px;
-    color: var(--red);
-    
-        p{
+
+        p {
             text-align: end;
             width: 93px;
             height: 33px;
@@ -49,72 +67,90 @@
 
         }
 
-        .cercle{
+        .cercle {
             width: 32px;
             height: 32px;
             border-radius: 25px;
             background-color: #c4c4c4;
             margin-left: 8px;
-       }
-   }
+        }
+    }
 }
 
 
-@media screen and (min-width: 768px){
-    
-       .bloc-rectangle >*:not(:first-child){
-        margin-left: 10px;
-       }
-       
-       .bloc-rectangle{
-        display: flex;
-       }
+@media screen and (min-width: 768px) {
 
-       .classTitle{
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-size: 36px;
-            vertical-align: bottom;
-            color: #FF6060;
-       }
-       .stars >*:not(:first-child){
+    .BannerAppartement {
+        .tel{
+            img{
+            height: 255px;
+            background-size: none;
+        }
+            
+        }
+    }
+
+    .bloc-rectangle>*:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    .bloc-rectangle {
+        display: flex;
+    }
+
+    .classTitle {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 36px;
+        vertical-align: bottom;
+        color: #FF6060;
+    }
+
+    .stars>*:not(:first-child) {
         margin-left: 3px;
-       }
-       .stars{
-            margin-bottom: 10px;
-            i{
+    }
+
+    .stars {
+        margin-bottom: 10px;
+
+        i {
             color: var(--red);
         }
-        .gray{
+
+        .gray {
             color: #E3E3E3;
         }
-       }
-       
-    .responsive{
+    }
+
+    .responsive {
         display: flex;
         justify-content: space-between;
     }
-    .collapse_flex{
+
+    .collapse_flex {
         display: flex;
         gap: 20px;
     }
-    
 
-    .AlexAndStars{
+
+    .AlexAndStars {
         margin-top: 10px;
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 5px;
-        .stars{
+
+        .stars {
             padding-top: 5px;
             width: 98px;
-            i{
-            width: 17px;   
-            color: var(--red);
+
+            i {
+                width: 17px;
+                color: var(--red);
+            }
+
+            .gray {
+                color: #E3E3E3;
+            }
         }
-        .gray{
-            color: #E3E3E3;
-        }
-       }
-   }
+    }
 }
