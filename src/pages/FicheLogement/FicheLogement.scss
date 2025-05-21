@@ -6,7 +6,7 @@
     justify-content: center;
 
     .BannerAppartement {
-        .tel{
+        .tel {
             width: 100%;
             height: 240px;
             border-radius: 50px;
@@ -14,28 +14,49 @@
             justify-content: center;
             align-items: center;
             max-width: 110vw;
-            object-fit: cover; 
-            
+            object-fit: cover;
+
         }
     }
-}
 
-.stars>*:not(:first-child) {
-    margin-left: 3px;
-}
+    .ville {
+        margin: 10px 0 0 0;
+        font-weight: 500;
+        font-size: 18px;
+        vertical-align: bottom;
 
-.classTitle {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 36px;
-    vertical-align: bottom;
-    color: #FF6060;
-}
+        .classTitle {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 24px;
+            vertical-align: bottom;
+            color: var(--red);
+            margin: 10px 0;
+        }
 
-.containerUserStars {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
+        .subClassTitle {
+            margin: 5px 0 0 0;
+            color: black;
+        }
+
+        .bloc-rectangle {
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+
+            .rectangle {
+                border-radius: 5px;
+                border: 1px solid var(--red);
+                background: var(--red);
+                width: 80px;
+                height: 18px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 8px;
+                padding-top: 6px;
+            }
+        }
+    }
 
     .stars {
         padding-top: 5px;
@@ -51,42 +72,73 @@
         }
     }
 
-    .user {
+    .containerUserStars {
         display: flex;
-        width: 135.5px;
-        height: 33px;
-        color: var(--red);
+        justify-content: space-between;
+        margin-bottom: 5px;
 
-        p {
-            text-align: end;
-            width: 93px;
-            height: 33px;
-            margin: 0;
-            font-weight: 500;
-            font-size: 17px;
+        .stars {
+            display: flex;
+            align-items: center;
+            width: 98px;
 
+            i {
+                width: 17px;
+                color: var(--red);
+            }
+
+            .gray {
+                color: #E3E3E3;
+            }
         }
 
-        .cercle {
-            width: 32px;
-            height: 32px;
-            border-radius: 25px;
-            background-color: #c4c4c4;
-            margin-left: 8px;
+        .user {
+            display: flex;
+            width: 135.5px;
+            height: 33px;
+            color: var(--red);
+            margin-bottom: 10px;
+
+            p {
+                text-align: end;
+                width: 93px;
+                height: 33px;
+                margin: 0;
+                font-weight: 500;
+                font-size: 17px;
+            }
+            .cercle {
+                width: 40px;
+                height: 40px;
+                border-radius: 25px;
+                background-color: #c4c4c4;
+                margin-left: 8px;
+            }
         }
     }
+
 }
+
+.bloc-rectangle>*:not(:first-child) {
+    margin-left: 10px;
+}
+
+.stars>*:not(:first-child) {
+    margin-left: 3px;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
 
     .BannerAppartement {
-        .tel{
-            img{
-            height: 255px;
-            background-size: none;
-        }
-            
+        .tel {
+            img {
+                height: 255px;
+                background-size: none;
+            }
+
         }
     }
 
@@ -133,7 +185,7 @@
     }
 
 
-    .AlexAndStars {
+    .containerUserStars {
         margin-top: 10px;
         display: flex;
         flex-direction: column-reverse;
@@ -142,6 +194,7 @@
         .stars {
             padding-top: 5px;
             width: 98px;
+            margin-left: 35px;
 
             i {
                 width: 17px;

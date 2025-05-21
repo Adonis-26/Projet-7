@@ -22,7 +22,7 @@ function FicheLogement() {
         <div className='ville_flex'>
           <div className='ville'>
             <p className='classTitle'>{apartement.title}</p>
-            <p className='region'>{apartement.location}</p>
+            <p className='subClassTitle'>{apartement.location}</p>
             <div className='bloc-rectangle' >
               {apartement.tags.map((item, index) => (
                 <p className='rectangle' key={index}>{item}</p>
@@ -49,11 +49,11 @@ function FicheLogement() {
       <div className='collapse_flex'>
         <Collapse title="Description">{apartement.description}</Collapse>
         <Collapse title="Équipements">
-          <ul>
+          <>
             {apartement.equipments.map((item, index) => (
-              <li key={index}>{item}</li>
+              <ul key={index}>{item}</ul>
             ))}
-          </ul>
+          </>
         </Collapse>
       </div>
     </div>
