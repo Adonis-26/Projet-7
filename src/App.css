@@ -5,6 +5,7 @@
 }
 
 
+
 body{
     margin: 0;
     padding: 0;
@@ -13,5 +14,9 @@ body{
     flex-direction: column;
     justify-content: center;
     font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 

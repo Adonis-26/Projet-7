@@ -1,8 +1,7 @@
-.banner { 
+.BannerApropos { 
    width: 92%;
    position: relative;
    max-width: 110vw;
-   background: url("/public/img/img_banner.png");
    background-position: center;
    background-repeat:no-repeat;
    background-size: cover;
@@ -25,24 +24,5 @@
    }
 }
 
-.banner::before{
-   position: absolute;
-   content: "";
-   inset: 0; /*c'est la même chose que top, left, bottom des position absolute*/
-   background-color: rgba(0,.0,.0, 3.5);
-   border-radius: 25px;
-   opacity: 0.5;
-}
 
-@media screen and (min-width: 768px){
-   .banner{
-      h3{
-         width: 45%;
-         text-align: center;
-         font-size: 26px;
-         br{
-            display: none;
-         }
-      }
-   }
-}
+
