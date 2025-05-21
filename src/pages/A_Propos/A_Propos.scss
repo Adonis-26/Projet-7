@@ -1,15 +1,29 @@
-.A_Propos{
+.A_Propos {
     
-    .aproposCollapse{
+        .bannerApropos {
+            margin: 0 3%;
+            height: 200px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 110vw;
+            background: url("/public/img/apropos.png");
+            background-size: 103%; 
+            background-position:left;
+            background-repeat: no-repeat;
+        }
+
+    .aproposCollapse {
         margin-top: 30px;
         padding: 0 4%;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .A_Propos{
-        
-        .aproposCollapse{
+    .A_Propos {
+
+        .aproposCollapse {
             padding: 0 10%;
         }
     }

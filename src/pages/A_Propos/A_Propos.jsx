@@ -7,7 +7,9 @@ import Banner from '../../Components/Banner/Banner';
 function A_Propos() {
   return (
     <div className="A_Propos">
-      <Banner />
+      <div className='bannerApropos'>
+        
+      </div>
       <div className="aproposCollapse">
         <Collapse title="Fiabilité">
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
