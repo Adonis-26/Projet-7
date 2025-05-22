@@ -5,17 +5,21 @@
     flex-direction: column;
     justify-content: center;
 
-    .BannerAppartement {
-        .tel {
-            width: 100%;
-            height: 240px;
-            border-radius: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 110vw;
-            object-fit: cover;
+    .carousel-container {
+        width: 100%;
+        max-width: 3000px;
+        margin: 0 auto;
+        border-radius: 25px;
+        overflow: hidden;
 
+        .carousel .slide {
+            transition: none;
+
+            .carousel-image {
+                object-fit: cover;
+                height: 500px;
+                width: 100%;
+            }
         }
     }
 
@@ -107,6 +111,7 @@
                 font-weight: 500;
                 font-size: 17px;
             }
+
             .cercle {
                 width: 40px;
                 height: 40px;
