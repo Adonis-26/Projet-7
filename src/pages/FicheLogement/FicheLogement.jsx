@@ -60,7 +60,11 @@ function FicheLogement() {
         <Collapse title="Équipements">
           <>
             {apartement.equipments.map((item, index) => (
-              <ul key={index}>{item}</ul>
+              <ul key={index}>
+                <li>
+                  {item}
+                </li>
+               </ul>
             ))}
           </>
         </Collapse>

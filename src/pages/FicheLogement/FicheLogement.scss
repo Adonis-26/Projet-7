@@ -11,15 +11,12 @@
         margin: 0 auto;
         border-radius: 25px;
         overflow: hidden;
+        
+        .carousel-image {
+            object-fit: cover; 
+            height: 500px;
+            width: 100%;
 
-        .carousel .slide {
-            transition: none;
-
-            .carousel-image {
-                object-fit: cover;
-                height: 500px;
-                width: 100%;
-            }
         }
     }
 
