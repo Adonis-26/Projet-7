@@ -3,8 +3,7 @@ import './FicheLogement.scss';
 import Collapse from '../../Components/Collapse/Collapse';
 import { useParams } from 'react-router-dom';
 import data from '../../../public/data.json';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Caroussel from '../../Components/caroussel/caroussel';
 
 function FicheLogement() {
   const { apartementId } = useParams(); // On récupère l'id de l'appartement depuis l'URL
@@ -18,15 +17,7 @@ function FicheLogement() {
   return ( 
     <div className='fichelogement'>
       
-        <div className='carousel-container'>
-        <Carousel className="carousel" showThumbs={false} infiniteLoop={true} autoPlay={true}>
-          {apartement.pictures.map((url, index) => (
-            <div key={index}>
-              <img className='carousel-image' src={url} alt={`photo ${index + 1}`} />
-            </div>
-          ))}
-        </Carousel>
-    </div>
+      <Caroussel images={apartement.pictures}/>
       <div className='responsive'>
         <div className='ville_flex'>
           <div className='ville'>
