@@ -28,16 +28,6 @@ function Caroussel({ images }) {
                 <button className="carousel-arrow right" onClick={Next}>
                     &#10095;
                 </button>
-                
-                <div className="carousel-dots">
-                {images.map((_, index) => (
-                    <span
-                        key={index}
-                        className={`dot ${index === currentIndex ? 'active' : ''}`}
-                        onClick={() => Slide(index)}
-                    ></span>
-                ))}
-            </div>
             </div>
         </div>
     );
