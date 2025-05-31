@@ -29,6 +29,9 @@ function Caroussel({ images }) {
                     &#10095;
                 </button>
             </div>
+             <div className="carousel-page-indicator">
+                    {currentIndex + 1} / {images.length}
+                </div>
         </div>
     );
 }
