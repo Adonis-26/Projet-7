@@ -8,7 +8,6 @@ import Caroussel from '../../Components/caroussel/caroussel';
 function FicheLogement() {
   const { apartementId } = useParams(); // On récupère l'id de l'appartement depuis l'URL
   const apartement = data.find((apt) => apt.id === apartementId); // On cherche dans le fichier JSON
-  console.log("apartement:", apartement);
 
   if (!apartement) {
     return <p>Appartement non trouvé.</p>; // Affiche un message si l'appartement n'existe pas
