@@ -4,17 +4,17 @@
     border-radius: 25px;
     height: auto;
     justify-content: center;
-    gap: 4%;
 }
 
 
 @media screen and (min-width: 768px){
    .ApartementGray{
-    width: 92%;
+    width: 93%;
     background: var(--gray);
-    margin:20px 51px;
+    margin:20px 56px;
     padding:  20px 0;
     display: flex;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
+    column-gap: 30px;
    }
  }
