@@ -42,11 +42,6 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  {
-    path: "/a_propos",
-    element:
-        <h1>a propos</h1>
-  },
 
 ])
 ReactDOM.createRoot(document.getElementById("root")).render(
