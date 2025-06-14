@@ -7,7 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import FicheLogement from "./pages/FicheLogement/FicheLogement";
 import Page404 from "./pages/Page404/Page404";
 import A_Propos from "./pages/A_Propos/A_Propos";
-import HeaderFooterLayout from "./Layout/HeaderFooterLayout";
+import HeaderFooterLayout from "./layout/HeaderFooterLayout";
 
 
 const router = createBrowserRouter([

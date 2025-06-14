@@ -1,43 +1,49 @@
 .collapse {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  overflow: hidden;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 17px;
 }
 
 .collapse-header {
-  background-color: #ff6060;
-  color: white;
-  padding: 4px 16px;
-  font-weight: bold;
-  border-radius: 8px;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
+  background-color: var(--red);
+  padding: 1px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  color: #f9f9f9;
 }
 
 .arrow {
+  
   font-size: 30px;
+  transition: transform 0.3s ease;
 }
 
 .arrow.open {
-  transform: rotate(180deg);
+  transform: rotate(180deg); 
 }
 
 .collapse-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
   background-color: #f9f9f9;
-  padding: 10px 16px 0 16px;
   border-radius: 0 0 8px 8px;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 17px;
- ul{
-  list-style-type:none;
-  margin: 2px;
-  padding: 0;
- }
+  margin-bottom: 15px;
+
+  .collapse-inner {
+    padding: 10px 16px 0 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+
+    ul {
+      list-style-type: none;
+      margin: 2px;
+      padding: 0;
+    }
+  }
 }
