@@ -15,7 +15,7 @@ function ApartementGray() {
   return (
     <div className='ApartementGray'>
       {apartements.map((apartement) => (
-        <Apartement title={apartement.title} imageApartement={apartement.cover} id={apartement.id} />
+        <Apartement key={apartement.id} title={apartement.title} imageApartement={apartement.cover} id={apartement.id} />
       ))}
     </div>
   )

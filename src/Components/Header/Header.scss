@@ -15,9 +15,7 @@
         text-decoration: none; 
         color: black
         }
-    a:hover{
-        text-decoration: underline;
-    }
+   
         .acceuil_and_a_propos{
             text-transform: uppercase;
             width: 50%;
@@ -28,11 +26,34 @@
             font-size: 74%;
             text-align: left;
             vertical-align: bottom;
-            .accueil, .a_propos{
-                margin-left: 20px;
-            }
+            gap: 15px;
+            
         }
 }
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.nav-link .accueil,
+.nav-link .a_propos {
+  padding-bottom: 4px;
+}
+
+.nav-link.active .accueil::after,
+.nav-link.active .a_propos::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 
 @media  screen and (min-width: 768px){
     .header{
@@ -50,9 +71,7 @@
             font-size: 136%;
             text-align: left;
             vertical-align: bottom;
-            .accueil, .a_propos{
-                margin-left: 20px
-            }
+            
         }
     }
     
