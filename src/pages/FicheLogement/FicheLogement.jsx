@@ -4,13 +4,14 @@ import Collapse from '../../Components/Collapse/Collapse';
 import { useParams } from 'react-router-dom';
 import data from '../../../data.json';
 import Caroussel from '../../Components/caroussel/caroussel';
+import Page404 from '../Page404/Page404';
 
 function FicheLogement() {
   const { apartementId } = useParams(); 
   const apartement = data.find((apt) => apt.id === apartementId);
 
   if (!apartement) {
-    return <p>Appartement non trouvé.</p>;
+    return< Page404/>;
   }
 
   return ( 
