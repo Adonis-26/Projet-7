@@ -4,18 +4,12 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import FicheLogement from "./Pages/FicheLogement/FicheLogement";
+import FicheLogement from "./pages/FicheLogement/FicheLogement";
 import Page404 from "./pages/Page404/Page404";
 import A_Propos from "./pages/A_Propos/A_Propos";
+import HeaderFooterLayout from "./Layout/HeaderFooterLayout";
 
 
-const HeaderFooterLayout = ()  => {
-  return <>
-     <Header />
-      <Outlet />
-     <Footer />
-  </>
-}
 const router = createBrowserRouter([
   {
     path:"/",

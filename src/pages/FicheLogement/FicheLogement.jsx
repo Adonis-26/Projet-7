@@ -2,7 +2,7 @@ import React from 'react';
 import './FicheLogement.scss';
 import Collapse from '../../Components/Collapse/Collapse';
 import { useParams } from 'react-router-dom';
-import data from '../../../public/data.json';
+import data from '../../../data.json';
 import Caroussel from '../../Components/caroussel/caroussel';
 
 function FicheLogement() {
